@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "central-poultry-farm",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.3.1",
+    "@headlessui/react": "^2.2.8",
+    "@heroicons/react": "^2.2.0",
     "@tailwindcss/vite": "^4.1.11",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",

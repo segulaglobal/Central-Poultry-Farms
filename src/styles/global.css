@@ -42,7 +42,10 @@
   --clr-black: #000000;
   --clr-white: #fff;
   --clr-gray-dark: #141516;
+  --clr-gray: #474747;
   --clr-gray-light: #f7f9f8;
+
+  --font-cerebri: "Cerebri Sans Pro"
 }
 
 ::selection {
@@ -75,10 +78,8 @@ img {
 
 /* Our Custom CSS  */
 @import "./layouts.css";
-/* @import "./typography.css"; */
-/* @import "./components.css"; */
-/* @import "./blog.css"; */
-
+@import "./components.css";
+@import "./typography.css";
 
 @media (max-width: 1024px) {
   .header-background {

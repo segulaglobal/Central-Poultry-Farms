@@ -5,22 +5,30 @@ import LogoWhite from "../assets/logo-white.png"
 import Welcome from '../components/Welcome.astro';
 import MainLayout from '../layouts/MainLayout.astro';
 import Wave from '../components/Wave.astro';
-
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer/Footer";
 
 ---
 
 <MainLayout>
+	<!-- Navigation Goes here -->
+	<NavBar client:load/>
+
 	<!-- <Welcome /> -->
-	 <div class="coming-soon">
+	 <div class="coming-soon relative">
 		<div class="container">
 			<div class="coming-container">
-				<Image src={LogoWhite} alt="Central Poutry Farm" />
+				<Image src={LogoWhite} alt="Central Poultry Farm" />
 				<h1>Coming soon</h1>
 				<p>Our Engineers are working hard to get you an amazing experience.</p>
 			</div>
 		</div>
 		<Wave />
 	 </div>
+
+
+	 <!-- ============ Footer goes here ========== -->
+	<Footer />
 </MainLayout>
 
 

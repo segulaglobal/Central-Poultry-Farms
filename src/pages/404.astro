@@ -1,0 +1,47 @@
+---
+import Wave from "../components/Wave.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+
+
+
+---
+
+
+
+
+<MainLayout title="Central Poultry Farm | 404">
+
+<section class="section-404 w-full h-screen">
+    <div class="container wrapper">
+        <div class="w-full h-full flex items-center justify-center flex-col text-white text-center">
+            <p class="text-xl">404</p>
+            <h1 class="text-7xl font-bold">Page not found</h1>
+            <p class="mt-4 mb-8">Sorry, we couldn’t find the page you’re looking for.</p>
+            <a href="/">&larr; Back to home</a>
+        </div>
+    </div>
+    <Wave />
+</section>
+
+</div>
+</MainLayout>
+
+
+
+<style lang="scss">
+
+.section-404 {
+    background-image: linear-gradient(to right, rgba(4, 13, 68, 0.83), rgba(7, 21, 101, 0.408)), url(../assets/coming-soon-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+a {
+    color: #fff;
+    display: inline-block;
+    padding: 1rem;
+
+    &:hover {
+        color: var(--clr-yellow);
+    }
+}
+</style>

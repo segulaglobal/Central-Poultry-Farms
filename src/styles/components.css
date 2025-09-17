@@ -1,0 +1,31 @@
+
+
+
+
+
+
+.btn-tertiary {
+    display: inline-block;
+    position: relative;
+    padding-block: .5rem;
+    padding-right: 1.5rem;
+    transition: .2s .4s;
+}
+
+.btn-tertiary:hover,
+.btn-tertiary:focus {
+    color: var(--clr-yellow);
+}
+
+.btn-tertiary:hover::after {
+    transform: translate(10px, -50%);
+}
+.btn-tertiary::after {
+    content: '↗';
+    color: var(--clr-yellow);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .5s;
+}
