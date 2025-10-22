@@ -1,5 +1,46 @@
 
 
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    font-size: .9rem;
+    transition: .3s;
+}
+.btn-yellow-thin {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 2rem;
+    color: var(--clr-yellow);
+    font-size: .9rem;
+    transition: .3s;
+}
+.btn-yellow-thin:hover {
+    background-color: var(--clr-yellow);
+    color: var(--clr-blue);
+}
+
+
+.btn-blue {
+    background-color: var(--clr-blue);
+    border-color: #fff;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: white;
+    color: var(--clr-blue);
+}
+.btn-yellow {
+    background-color: var(--clr-yellow);
+    border-color: #fff;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+    background-color: white;
+    color: var(--clr-yellow);
+}
 
 
 

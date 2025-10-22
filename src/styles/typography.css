@@ -8,3 +8,19 @@
     font-weight: bold;
 
 }
+
+.heading-round {
+    display: inline-block;
+    padding: 1rem;
+    padding-inline: 3rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+}
+.heading-yellow {
+    color: var(--clr-yellow);
+    border-color: var(--clr-yellow);
+}
+.heading-blue {
+    color: var(--clr-blue);
+    border-color: var(--clr-blue);
+}

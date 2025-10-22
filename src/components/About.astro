@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets"
+import Factory from "../assets/factory.png";
+import Eggs from "../assets/egg.png";
+---
+
+
+
+
+<section class="section-about">
+    <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div>
+                <Image src={Factory} alt="Central Poultry Factory" />
+                <div>
+                    <p class="my-8">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  centuries, Lorem Ipsum is simply dummy text of the printing and typesetting industry.  centuries,</p>
+                    <a href="#" class="btn btn-yellow">Our Services</a>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="heading-round heading-yellow mb-8">About Us</h3>
+                <h3>We’re Best Agriculture & Organic Farms</h3>
+                <div class="flex items-center gap-4 my-8">
+                    <div class="flex bg-white w-[30px] h-[30px] items-center justify-center">
+                        <i class="fa-solid fa-check text-blue-950"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  centuries,</p>
+                </div>
+                <div class="flex items-center gap-4 my-8">
+                    <div class="flex bg-white w-[30px] h-[30px] items-center justify-center">
+                        <i class="fa-solid fa-check text-blue-950"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  centuries,</p>
+                </div>
+                <div class="flex items-center gap-4 my-8">
+                    <div class="flex bg-white w-[30px] h-[30px] items-center justify-center">
+                        <i class="fa-solid fa-check text-blue-950"></i>
+                    </div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.  centuries,</p>
+                </div>
+
+                <Image src={Eggs} alt="Eggs from Central Poultry" />
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<style  lang="scss">
+
+.section-about {
+    width: 100%;
+    padding: 5rem 0;
+    background-image: url(../assets/blue-bg.png);
+    background-attachment: fixed;
+    color: #fff;
+}
+</style>
