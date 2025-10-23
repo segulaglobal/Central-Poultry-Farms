@@ -1,0 +1,80 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Footer from "../components/Footer/Footer";
+import NavBar from "../components/NavBar/NavBar"
+import Hero from '../components/Hero/Hero'
+---
+
+
+
+<MainLayout title="Contact Central Poultry">
+
+    <!-- Navigation here -->
+    <NavBar />
+
+    <!-- Hero section here -->
+    <Hero title="Contact us" subtitle="Let’s Talk! We’re Ready to Answer All Your Questions"></Hero>
+
+
+    <!-- Contact Form Goes here -->
+    <section class="section-contact py-28">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="form-container md:col-span-2">
+                    <h3 class="heading-round heading-blue">Connect with us</h3>
+                    <h2 class="heading-tertiary my-8">Ready to work with us?</h2>
+                    <form action="#">
+                        <div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+                            <input type="text" name="fname" id="fname" placeholder="Your Name" required class="inputarea">
+                            <input type="email" name="email" id="email" placeholder="Email Address" required class="inputarea">
+                        </div>
+                        <div class="grid grid-cols-1">
+                            <input type="text" name="telephone" id="telephone" placeholder="Phone Number" required class="inputarea">
+                        </div>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required class="inputarea"></textarea>
+                        <input type="submit" class="btn-blue btn hover:border-b-blue-950" value="Send">
+                    </form>
+                </div>
+                <div class="">
+                    <img src="/assets/contact.png" alt="Contact Central Poultry">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer here -->
+    <Footer></Footer>
+</MainLayout>
+
+
+
+
+
+<style lang="scss">
+
+    .section-contact {
+
+        form {
+            font-family: inherit;
+
+            .inputarea {
+                border: 1px solid lightgray;
+                padding: .5rem 1rem;
+                border-radius: 2rem;
+                margin-bottom: .5rem;
+                width: 98%;
+                transition: .4s;
+                // margin-inline: auto;
+
+                &:focus,
+                &:valid {
+                    width: 100%
+                }
+            }
+        }
+
+        .form-container {
+            grid-column: 1/3;
+        }
+    }
+</style>

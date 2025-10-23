@@ -25,12 +25,14 @@
 
 .btn-blue {
     background-color: var(--clr-blue);
+    color: var(--clr-white);
     border-color: #fff;
 }
 .btn-blue:hover,
 .btn-blue:focus {
     background-color: white;
     color: var(--clr-blue);
+    border-color: var(--clr-blue);
 }
 .btn-yellow {
     background-color: var(--clr-yellow);
