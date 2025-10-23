@@ -1,0 +1,30 @@
+.swiper-container {
+    position: relative;
+}
+.swiper {
+    position: initial !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 100% !important;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--clr-blue);
+    color: var(--clr-blue);
+    transition: .3s;
+
+    &:hover,
+    &:focus {
+        background-color: var(--clr-blue);
+        color: var(--clr-white);
+    }
+}
+
+.swiper-navigation-icon {
+    width: 1rem !important;
+
+    
+}

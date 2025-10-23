@@ -9,6 +9,7 @@ import WaveYellow from '../components/WaveYellow.astro';
 import NavBar from "../components/NavBar/NavBar";
 import About from "../components/About.astro"
 import Footer from "../components/Footer/Footer";
+import ServicesSlider from '../components/ServicesSlider/ServicesSlider';
 
 ---
 
@@ -46,6 +47,16 @@ import Footer from "../components/Footer/Footer";
 	</section>
 	<!-- End of section yellow -->
 
+
+
+    <!-- Services Section -->
+	<section class="section-services py-28">
+		<div class="container">
+			<h3 class="heading-round heading-blue">Our Services</h3>
+			<h2 class="heading-tertiary py-4">We Offers Eco & Agriculture Services</h2>
+			<ServicesSlider client:load />
+		</div>
+	</section>
 
 
 	<!-- section About -->
